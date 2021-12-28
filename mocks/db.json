@@ -1,0 +1,25 @@
+{
+  "products":[
+    {
+      "id": 1,
+      "label": "maïs",
+      "price": 7000,
+      "currency": "GNF",
+      "unity": "KG"
+    },
+    {
+      "id": 2,
+      "label": "poudre de manioc",
+      "price": 4500,
+      "currency": "GNF",
+      "unity": "KG"
+    },
+    {
+      "id": 3,
+      "label": "Riz",
+      "price": 3500,
+      "currency": "GNF",
+      "unity": "KG"
+    }
+  ]
+}
