@@ -1,5 +1,5 @@
 {
-  "products":[
+  "products": [
     {
       "id": 1,
       "label": "maïs",
@@ -16,10 +16,129 @@
     },
     {
       "id": 3,
-      "label": "Riz",
+      "label": "riz",
       "price": 3500,
       "currency": "GNF",
       "unity": "KG"
+    },
+    {
+      "id": 4,
+      "label": "huile d'arachide",
+      "price": 1500,
+      "currency": "GNF",
+      "unity": "L"
+    },
+    {
+      "id": 5,
+      "label": "poison",
+      "price": 3800,
+      "currency": "GNF",
+      "unity": "KG"
+    },
+    {
+      "id": 6,
+      "label": "farine",
+      "price": 4300,
+      "currency": "GNF",
+      "unity": "KG"
+    },
+    {
+      "id": 7,
+      "label": "viande",
+      "price": 36600,
+      "currency": "GNF",
+      "unity": "KG"
+    },
+    {
+      "id": 8,
+      "label": "poulet",
+      "price": 24000,
+      "currency": "GNF",
+      "unity": "KG"
+    },
+    {
+      "id": 9,
+      "label": "tomate",
+      "price": 4100,
+      "currency": "GNF",
+      "unity": "KG"
+    },
+    {
+      "id": 10,
+      "label": "piment",
+      "price": 31000,
+      "currency": "GNF",
+      "unity": "KG"
+    },
+    {
+      "id": 11,
+      "label": "huile rouge",
+      "price": 3300,
+      "currency": "GNF",
+      "unity": "L"
     }
-  ]
+  ],
+  "overview": {
+    "moreViewed": [
+      {
+        "id": 1,
+        "label": "riz",
+        "price": 3500,
+        "currency": "GNF",
+        "unity": "KG"
+      },
+      {
+        "id": 2,
+        "label": "huile d'arachide",
+        "price": 1500,
+        "currency": "GNF",
+        "unity": "L"
+      },
+      {
+        "id": 3,
+        "label": "huile rouge",
+        "price": 3300,
+        "currency": "GNF",
+        "unity": "L",
+        "number-of-view": 100
+      },
+      {
+        "id": 4,
+        "label": "farine",
+        "price": 4300,
+        "currency": "GNF",
+        "unity": "KG"
+      }
+    ],
+    "lastUpdated": [
+      {
+        "id": 1,
+        "label": "viande",
+        "price": 36600,
+        "currency": "GNF",
+        "unity": "KG"
+      },
+      {
+        "id": 2,
+        "label": "poulet",
+        "price": 24000,
+        "currency": "GNF",
+        "unity": "KG"
+      },
+      {
+        "id": 3,
+        "label": "tomate",
+        "price": 4100,
+        "currency": "GNF",
+        "unity": "KG"
+      },
+      {
+        "id": 4,
+        "label": "piment",
+        "price": 31000,
+        "currency": "GNF",
+        "unity": "KG"
+      }
+    ]
+  }
 }

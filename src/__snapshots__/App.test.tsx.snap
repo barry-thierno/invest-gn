@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`make shapshot of the component 1`] = `
+<div>
+  <div
+    class="sc-pVTFL gSggZw"
+  >
+    <header
+      class="sc-bdvvtL hYwHED"
+    >
+      <nav
+        class="sc-gsDKAQ bjecW"
+      >
+        <h1>
+          Invest Guinea
+        </h1>
+        <a
+          class="sc-dkPtRN dDWeBq"
+          href=""
+        >
+          Qui sommes nous
+        </a>
+        <a
+          class="sc-dkPtRN dDWeBq"
+          href=""
+        >
+          Suggérer
+        </a>
+        <a
+          class="sc-dkPtRN dDWeBq"
+          href=""
+        >
+          Nous soutenir
+        </a>
+      </nav>
+    </header>
+    <div
+      class="Container"
+    >
+      <div>
+        <form>
+          <div>
+            <input
+              class="search-input"
+              id="search-input-id"
+              name="pokemonName"
+              placeholder="Rechercher un produit..."
+              value=""
+            />
+            <button
+              disabled=""
+              type="submit"
+            >
+              Rechercher
+            </button>
+          </div>
+        </form>
+        <div
+          class="search-result"
+        >
+          <div
+            class="product-data-view-container"
+          >
+            <div
+              class="product-label"
+            />
+            <div
+              class="product-price"
+            >
+              0
+               
+              XXX
+              / 
+              XXX
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-jrQzAO ctwoVF"
+    >
+      <div>
+        Chargement en cours ...
+      </div>
+    </div>
+  </div>
+</div>
+`;

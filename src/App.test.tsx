@@ -1,9 +1,13 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from "@testing-library/react";
+import App from "./App";
 
-test('renders learn react link', () => {
+test("make shapshot of the component", () => {
+  const { container } = render(<App />);
+  expect(container).toMatchSnapshot();
+});
+
+test("renders application header", () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
+  const linkElement = screen.getByRole("heading", { name: /invest guinea/i });
   expect(linkElement).toBeInTheDocument();
 });

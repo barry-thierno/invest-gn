@@ -1,9 +1,8 @@
 import { useState } from "react";
-import ProductErrorBoundary from "./products/ProductErrorBoundary/ProductErrorBoundary";
-import ProductInfo from "./products/productInfo";
-import SearchForm from "./searchForm/searchForm";
+import ProductErrorBoundary from "./Products/ProductErrorBoundary/ProductErrorBoundary";
+import ProductInfo from "./Products/ProductInfo";
+import SearchForm from "./SearchForm/SearchForm";
 
-export interface ISearchProp {}
 export const Search: React.FunctionComponent = () => {
   const [productName, setProductName] = useState("");
 
@@ -15,10 +14,7 @@ export const Search: React.FunctionComponent = () => {
     <div>
       <SearchForm initialSearchValue={productName} onSubmit={handleSubmit} />
       <div className="search-result">
-        <ProductErrorBoundary
-        // onReset={() => onSelect("")}
-        // resetKeys={[pokemonName]}
-        >
+        <ProductErrorBoundary resetKeys={[productName]}>
           <ProductInfo productName={productName} />
         </ProductErrorBoundary>
       </div>

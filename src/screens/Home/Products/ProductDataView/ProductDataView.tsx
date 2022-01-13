@@ -1,4 +1,4 @@
-import { IProduct } from "../product.model";
+import { IProduct } from "../Product.model";
 
 export type ProductDataViewProp = {
   product: IProduct;

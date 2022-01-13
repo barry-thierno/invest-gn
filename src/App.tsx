@@ -1,17 +1,28 @@
-import React from "react";
-import "./App.css";
-import { Search } from "./screens/search/search";
+import Header from "layouts/Header";
+import { Search } from "screens/Home/Home";
+import Overview from "screens/Home/Overview/Overview";
+import styled from "styled-components";
+
+const Container = styled.div`
+  text-align: center;
+`;
+const OverviewContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  flex: 1;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Invest Guinea</h1>
-      </header>
-      <div className="container">
+    <Container>
+      <Header />
+      <div className="Container">
         <Search />
       </div>
-    </div>
+      <OverviewContainer>
+        <Overview />
+      </OverviewContainer>
+    </Container>
   );
 }
 

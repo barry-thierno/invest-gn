@@ -1,10 +1,10 @@
-import useAsync from "commons/hooks/useAsync";
-import { ResponseStatus } from "commons/http";
+import useAsync from "utils/hooks/useAsync";
+import { ResponseStatus } from "utils/http";
 import { useEffect } from "react";
 import client from "utils/fetch/client";
-import { IProduct } from "./product.model";
-import ProductDataView from "./productDataView/productDataView";
-import ProductInfoFallback from "./productInfoFallback/poductInfoFallback";
+import { IProduct } from "./Product.model";
+import ProductDataView from "./ProductDataView/ProductDataView";
+import ProductInfoFallback from "./ProductInfoFallback/PoductInfoFallback";
 
 export interface ProductInfoProps {
   productName: string;

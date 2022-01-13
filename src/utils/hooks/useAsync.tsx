@@ -1,5 +1,17 @@
 import React from "react";
-import { ResponseStatus } from "commons/http";
+import { ResponseStatus } from "utils/http";
+
+export type RequestState<T> =
+  | { status: ResponseStatus.Idle }
+  | { status: ResponseStatus.Pending }
+  | { status: ResponseStatus.Error; error: Error }
+  | { status: ResponseStatus.Succes; data: T };
+
+export type RequestAction<T> =
+  | { type: ResponseStatus.Idle }
+  | { type: ResponseStatus.Pending }
+  | { type: ResponseStatus.Error; error: Error }
+  | { type: ResponseStatus.Succes; data: T };
 
 function useSafeDispatch(dispatch: React.Dispatch<RequestAction<unknown>>) {
   const mountedRef = React.useRef(false);
@@ -23,20 +35,8 @@ export type AsyncState<T> = {
   error: Error;
 };
 
-export type RequestState<T> =
-  | { status: ResponseStatus.Idle }
-  | { status: ResponseStatus.Pending }
-  | { status: ResponseStatus.Error; error: Error }
-  | { status: ResponseStatus.Succes; data: T };
-
-export type RequestAction<T> =
-  | { type: ResponseStatus.Idle }
-  | { type: ResponseStatus.Pending }
-  | { type: ResponseStatus.Error; error: Error }
-  | { type: ResponseStatus.Succes; data: T };
-
 function asyncReducer<T>(
-  state: RequestState<T>,
+  _: RequestState<T>,
   apiResp: RequestAction<T>
 ): RequestState<T> {
   const { type } = apiResp;
